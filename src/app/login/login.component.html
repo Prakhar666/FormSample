@@ -1,0 +1,23 @@
+
+<!-- <div id="login">
+  
+    <p>My bday is {{ bday | date | uppercase }} </p>
+    <p>My bday is {{ bday | date: 'fulldate' | uppercase }} </p>
+  <input type="email" placeholder="Your Email" ng-model="text" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" required />
+  <span class="error" ng-show="myForm.input.$error.required">*</span><br/><br/>
+  <input type="password" placeholder="Your Password" required /><br/><br/>
+  <button type="submit">Submit</button>
+  
+</div> -->
+
+<!-- <form (ngSubmit)= "onSubmit()">
+  <input type= "text" [(ngModel)]= "username" name= "username">
+  <input type= "text" [(ngModel)]= "password" name= "password">
+  <button>Submit</button> 
+</form> -->
+
+<form (ngSubmit)="onSubmit()">
+  <input type="text" [(ngModel)]="username" placeholder="Username" name="username" />
+  <input type="password" [(ngModel)]="password" placeholder="password" name="password" />
+  <button type="submit">Login</button>
+</form>
